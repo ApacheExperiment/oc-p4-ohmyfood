@@ -1,0 +1,21 @@
+.button-explorer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width:218px;
+    height:50px;
+    border-radius:25px;
+    color:$main-bg;
+    background: linear-gradient(-3.33deg, rgb(147, 86, 220) -11.44%, #ff79da 123.93%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    
+    &__before {
+        
+        border-radius: inherit;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+}

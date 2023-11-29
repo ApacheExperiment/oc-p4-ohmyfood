@@ -1,0 +1,21 @@
+/******General******/
+@import "./general/google-fonts";
+@import "./general/general";
+@import "./general/typo";
+
+/******Layout******/
+@import "./layout/header";
+@import"./layout/footer";
+
+/******Mixins-Variables******/
+@import"./mixins-variables/mixins";
+@import"./mixins-variables/variables";
+
+/******Pages******/
+@import"./pages/homepage";
+@import"./pages/restaurants";
+
+/******Composants******/
+@import"./composants/button-explorer";
+@import"./composants/button-fonction";
+@import"./composants/cards";
