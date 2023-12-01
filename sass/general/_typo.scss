@@ -1,16 +1,31 @@
 /******Typo******/
-
+/******Main******/
 body {
   font-family: "Roboto", sans-serif;
 }
 
+/******Header******/
 .header__logo-txt {
   font-family: "Shrikhand", cursive;
   font-size: 30px;
   font-weight: 400;
 }
-
+.localisation-container {
+  input[type="text"],
+  input[type="text"]::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    font-family:"Roboto", sans-serif;
+    color:#353535;
+  }
+}
 .reserver__content {
   font-size: 18px;
   font-weight:300;
+}
+
+.footer__title {
+  font-family: "Shrikhand", cursive;
+  font-size:18px;
+  font-weight:400;
 }

@@ -1,3 +1,8 @@
+.fonction {
+  &__buttons-container {
+    counter-reset: n°Button;
+  }
+}
 .button-fonction {
     display:flex;
     flex-direction: initial;
@@ -5,6 +10,7 @@
     align-items: center;
     gap:initial;
     list-style-type: none;
+    counter-increment:n°Button;
     width: 100%;
 
     &:before {
@@ -14,8 +20,9 @@
         align-items: center;
         gap:initial;
         list-style-type: none;
-        content: counter(nbButton);
+        content: counter(n°Button);
         z-index: 1;
+
         background-color: $num-fonction;
         color: white;
         width: 24px;

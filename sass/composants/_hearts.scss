@@ -1,0 +1,56 @@
+/******Heart******/
+.heart-label {
+    display: inline-block;
+    cursor: pointer;
+  
+    .hidden-heart-input {
+      display: none;
+    }
+  
+    .fa-heart {
+      font-size: 24px; /* Taille du coeur */
+      color:black;
+      
+      transition: color 0.2s; /* Transition pour l'effet de changement */
+      position: absolute;
+      right: 23px;
+      bottom: 32px;
+      text-align: center;
+    }
+      
+}
+/* Chaque coeur réagit indépendamment */
+#heart1:checked + .fa-heart {
+    color: transparent; /* Rend le contour du coeur transparent */
+    background: linear-gradient(-3.33deg, rgb(147, 86, 220) -11.44%, #ff79da 123.93%);
+    -webkit-background-clip: text;
+    background-clip: text; /* Pour remplir avec le dégradé */  
+}
+    /* Chaque coeur réagit indépendamment */
+    #heart1:checked + .fa-heart::before {
+        color: transparent; /* Rend le contour du coeur transparent */
+        background: linear-gradient(-3.33deg, rgb(147, 86, 220) -11.44%, #ff79da 123.93%);
+        -webkit-background-clip: text;
+        background-clip: text; /* Pour remplir avec le dégradé */  
+    }
+  
+    #heart2:checked + .fa-heart::before {
+        color: transparent; /* Rend le contour du coeur transparent */
+        background: linear-gradient(-3.33deg, rgb(147, 86, 220) -11.44%, #ff79da 123.93%);
+        -webkit-background-clip: text; /* Pour remplir avec le dégradé */
+        background-clip: text; /* Pour remplir avec le dégradé */
+    }
+  
+    #heart3:checked + .fa-heart::before {
+        color: transparent; /* Rend le contour du coeur transparent */
+        background: linear-gradient(-3.33deg, rgb(147, 86, 220) -11.44%, #ff79da 123.93%);
+        -webkit-background-clip: text; /* Pour remplir avec le dégradé */
+        background-clip: text; /* Pour remplir avec le dégradé */
+    }
+  
+    #heart4:checked + .fa-heart::before {
+        color: transparent; /* Rend le contour du coeur transparent */
+        background: linear-gradient(-3.33deg, rgb(147, 86, 220) -11.44%, #ff79da 123.93%);
+        -webkit-background-clip: text; /* Pour remplir avec le dégradé */
+        background-clip: text; /* Pour remplir avec le dégradé */
+    }

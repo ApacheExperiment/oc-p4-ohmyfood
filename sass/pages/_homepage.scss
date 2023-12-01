@@ -8,16 +8,14 @@
     margin: 0;
     background-color: $location-bg;
   
-    & input[type=text] {
+    input[type=text] {
     width: 109px;
     background-color: $location-bg;
     border: none;
-    font-size: 16px;
-    font-weight: 500;
-    }
-    & input[type=text]:focus::placeholder {
+    
+    &:focus::placeholder {
     opacity: 0;
-    border: none;
+    }
     }
 }
 /******Reserver******/

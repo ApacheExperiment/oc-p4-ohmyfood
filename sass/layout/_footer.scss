@@ -13,4 +13,20 @@ footer {
     padding:22px 25px;
     max-width:1440px;
     color:white;
+
+    &__title {
+        height:27px;
+    }
+    &__list {
+        display:flex;
+        flex-direction:column;
+        justify-content:initial;
+        align-items:initial;
+        gap:7px;
+    }
+    &__link {
+        display:flex;
+        align-items:center;
+        gap:10px;
+    }
 }
