@@ -1,56 +1,78 @@
 /******Heart******/
-.heart-label {
-    display: inline-block;
+/*color-mix(in srgb, #ff79da 70%, rgba(147, 86, 220) 100%);*/
+/*.heart-label {
     cursor: pointer;
+    
   
     .hidden-heart-input {
-      display: none;
-    }
-  
-    .fa-heart {
-      font-size: 24px; /* Taille du coeur */
-      color:black;
       
-      transition: color 0.2s; /* Transition pour l'effet de changement */
-      position: absolute;
-      right: 23px;
-      bottom: 32px;
-      text-align: center;
     }
-      
+}*/
+.restaurants,
+.restaurant-page,
+.card {
+
+.fas {
+    text-align: center;
+    background: linear-gradient(rgba(147, 86, 220),#ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: +1;
+    opacity: 0;
+    transition: opacity 0.01s;
+    
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    &:hover + .far,
+    &:focus + .far,
+    &:active {
+    background: linear-gradient(rgba(147, 86, 220),#ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
 }
-/* Chaque coeur réagit indépendamment */
-#heart1:checked + .fa-heart {
-    color: transparent; /* Rend le contour du coeur transparent */
+.far {
+        text-align: center;
+        color: inherit;
+        &:active {
+            opacity:1;
+        }
+    }
+}
+
+.fa-heart {
+    font-size: 26px;
+    position: absolute;
+    right: 23px;
+    bottom: 32px;
+    }
+
+
+.restaurant-page .fa-heart {
+    width: 26px;
+    position: absolute;
+    right: 30px;
+    bottom: 2px;
+    }
+
+/*#heart:checked + .far  {
+    
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: inherit;
+}
+#heart:checked + .fas  {
+    color: transparent;
     background: linear-gradient(-3.33deg, rgb(147, 86, 220) -11.44%, #ff79da 123.93%);
     -webkit-background-clip: text;
-    background-clip: text; /* Pour remplir avec le dégradé */  
-}
-    /* Chaque coeur réagit indépendamment */
-    #heart1:checked + .fa-heart::before {
-        color: transparent; /* Rend le contour du coeur transparent */
-        background: linear-gradient(-3.33deg, rgb(147, 86, 220) -11.44%, #ff79da 123.93%);
-        -webkit-background-clip: text;
-        background-clip: text; /* Pour remplir avec le dégradé */  
-    }
-  
-    #heart2:checked + .fa-heart::before {
-        color: transparent; /* Rend le contour du coeur transparent */
-        background: linear-gradient(-3.33deg, rgb(147, 86, 220) -11.44%, #ff79da 123.93%);
-        -webkit-background-clip: text; /* Pour remplir avec le dégradé */
-        background-clip: text; /* Pour remplir avec le dégradé */
-    }
-  
-    #heart3:checked + .fa-heart::before {
-        color: transparent; /* Rend le contour du coeur transparent */
-        background: linear-gradient(-3.33deg, rgb(147, 86, 220) -11.44%, #ff79da 123.93%);
-        -webkit-background-clip: text; /* Pour remplir avec le dégradé */
-        background-clip: text; /* Pour remplir avec le dégradé */
-    }
-  
-    #heart4:checked + .fa-heart::before {
-        color: transparent; /* Rend le contour du coeur transparent */
-        background: linear-gradient(-3.33deg, rgb(147, 86, 220) -11.44%, #ff79da 123.93%);
-        -webkit-background-clip: text; /* Pour remplir avec le dégradé */
-        background-clip: text; /* Pour remplir avec le dégradé */
-    }
+    background-clip: text; 
+    
+}*/
+

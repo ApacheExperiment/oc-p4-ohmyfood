@@ -1,4 +1,4 @@
-.button-explorer {
+.button-commander {
     @include flex ($direction:row, $justify:center, $align:center, $gap:0);
     width:218px;
     height:50px;
@@ -16,5 +16,3 @@
     background: linear-gradient(-3.33deg, rgba(147, 86, 220) -11.44%, #ff79da 95.93%);
   }
 }
-
-   

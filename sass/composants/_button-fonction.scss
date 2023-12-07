@@ -1,53 +1,50 @@
+/*Button Fonction*/
+
 .fonction {
   &__buttons-container {
     counter-reset: n°Button;
   }
 }
 .button-fonction {
-    display:flex;
-    flex-direction: initial;
-    justify-content: initial;
-    align-items: center;
-    gap:initial;
+    @include flex ($align:center);
     list-style-type: none;
-    counter-increment:n°Button;
+    counter-increment:nbButton;
     width: 100%;
 
     &:before {
-        display:flex;
-        flex-direction: initial;
-        justify-content: center;
-        align-items: center;
-        gap:initial;
+        @include flex ($justify:center, $align:center);
         list-style-type: none;
-        content: counter(n°Button);
-        z-index: 1;
-
-        background-color: $num-fonction;
-        color: white;
+        content: counter(nbButton);
+        z-index: +1;
+        background-color:$num-fonction;
+        color: $main-bg;
         width: 24px;
         height: 24px;
         border-radius: 50%;
-      }
+    }
     &__icon {
-        color: #7a7a7a;
-      }
+        color:$icon;
+    }
     
-      &__link {
+    &__link {
         margin-left: -12px;
         width: 100%;
         border-radius: 20px;
         padding-left: 24px;
-        display: flex;
-        flex-direction: initial;
-        justify-content: initial;
-        align-items: center;
-        gap:23px;
+        @include flex ($align:center, $gap:23px);
         background-color:$button-fonction;
         height: 72.38px;
-        border: 1px solid transparent;
+        
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-        transition: box-shadow, border, background-color, 0.5s;
-
+        transition: box-shadow, border, background-color, 1s;
+        
+      &:hover,
+      &:focus {
+      background-color: lighten(#f7f7f7, 0.1%);
+      
+      .button-fonction__icon {
+        color: rgba(147, 86, 220);
+      } 
     }
+  }
 }
