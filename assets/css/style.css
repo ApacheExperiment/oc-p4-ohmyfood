@@ -43,6 +43,14 @@ ul {
 /******Weights******/
 /******Sizes******/
 /******Colors******/
+/******Buttons******/
+.button-explorer,
+.button-fonction,
+.button-commander {
+  font-size: 16px;
+  font-weight: 500;
+}
+
 /******Main******/
 body {
   font-family: "Roboto", sans-serif;
@@ -92,19 +100,30 @@ body {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
 }
+.restaurant-page .form__title {
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 18.75px;
+  font-size: 16px;
+}
+.restaurant-page .form__subtitle {
+  font-size: 18px;
+  font-weight: 500;
+}
+.restaurant-page .form__description {
+  font-size: 15px;
+  font-weight: 300;
+}
+.restaurant-page .form__price {
+  font-size: 16px;
+  font-weight: 700;
+}
 
+/******Footer******/
 .footer__title {
   font-family: "Shrikhand", cursive;
   font-size: 18px;
   font-weight: 300;
-}
-
-/******Buttons******/
-.button-explorer,
-.button-fonction,
-.button-commander {
-  font-size: 16px;
-  font-weight: 500;
 }
 
 /******Layout******/
@@ -494,50 +513,104 @@ footer {
 
     }
 }*/
-.restaurants .fas,
-.restaurant-page .fas,
-.card .fas {
+/* Style du conteneur */
+.icon-heart-box {
+  position: absolute;
+  right: 19px;
+  bottom: 25px;
   text-align: center;
-  background: linear-gradient(rgb(147, 86, 220), #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.01s;
+  display: inline-block;
+  cursor: pointer;
+  /* Style de l'icône du coeur */
+  /* Style au clic et état coché pour le premier coeur */
+  /* Style au clic et état coché pour le deuxième coeur */
+  /* Et ainsi de suite pour chaque coeur */
 }
-.restaurants .fas:hover, .restaurants .fas:focus, .restaurants .fas:active,
-.restaurant-page .fas:hover,
-.restaurant-page .fas:focus,
-.restaurant-page .fas:active,
-.card .fas:hover,
-.card .fas:focus,
-.card .fas:active {
-  opacity: 1;
+.icon-heart-box .heart-icon {
+  width: 28px;
+  height: 28px;
+  transition: transform 3s; /* Transition pour l'effet de changement de couleur */
+  /* Couleur initiale du coeur */
+}
+.icon-heart-box .hidden-heart-input {
+  visibility: hidden;
+}
+.icon-heart-box #heart1:checked + .heart-label .heart-icon {
+  fill: color-mix(in srgb, rgb(147, 86, 220) 39%, #ff79da 95%); /* Couleur remplie au clic */
+  stroke-width: 0; /* Épaisseur du contour à zéro */
+}
+.icon-heart-box #heart2:checked + .heart-label .heart-icon {
+  fill: color-mix(in srgb, rgb(147, 86, 220) 39%, #ff79da 95%); /* Couleur remplie au clic */
+  stroke-width: 0; /* Épaisseur du contour à zéro */
+}
+.icon-heart-box #heart3:checked + .heart-label .heart-icon {
+  fill: color-mix(in srgb, rgb(147, 86, 220) 39%, #ff79da 95%); /* Couleur remplie au clic */
+  stroke-width: 0; /* Épaisseur du contour à zéro */
+}
+.icon-heart-box #heart4:checked + .heart-label .heart-icon {
+  fill: color-mix(in srgb, rgb(147, 86, 220) 39%, #ff79da 95%); /* Couleur remplie au clic */
+  stroke-width: 0; /* Épaisseur du contour à zéro */
+}
+
+.icon-heart-box-restaurant {
+  position: absolute;
+  right: 32px;
+  bottom: 2px;
+  text-align: center;
+  display: inline-block;
   cursor: pointer;
 }
-.restaurants .fas:hover + .far, .restaurants .fas:focus + .far, .restaurants .fas:active,
-.restaurant-page .fas:hover + .far,
-.restaurant-page .fas:focus + .far,
-.restaurant-page .fas:active,
-.card .fas:hover + .far,
-.card .fas:focus + .far,
-.card .fas:active {
-  background: linear-gradient(rgb(147, 86, 220), #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.icon-heart-box-restaurant .heart-icon {
+  width: 28px;
+  height: 28px;
+  transition: transform 3s; /* Transition pour l'effet de changement de couleur */
+  /* Couleur initiale du coeur */
 }
-.restaurants .far,
-.restaurant-page .far,
-.card .far {
-  text-align: center;
-  color: inherit;
+.icon-heart-box-restaurant .hidden-heart-input {
+  visibility: hidden;
 }
-.restaurants .far:active,
-.restaurant-page .far:active,
-.card .far:active {
-  opacity: 1;
+.icon-heart-box-restaurant #heart-restaurant:checked + .heart-label .heart-icon {
+  fill: color-mix(in srgb, rgb(147, 86, 220) 39%, #ff79da 95%);
+  stroke-width: 0; /* Épaisseur du contour à zéro */
+}
+
+/*
+.restaurants,
+.restaurant-page,
+.card {
+  .fas {
+    text-align: center;
+    background: linear-gradient(rgba(147, 86, 220), #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: +1;
+    opacity: 0;
+    transition: opacity 0.01s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    &:hover + .far,
+    &:focus + .far,
+    &:active {
+      background: linear-gradient(rgba(147, 86, 220), #ff79da);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .far {
+    text-align: center;
+    color: inherit;
+    &:active {
+      opacity: 1;
+    }
+  }
 }
 
 .fa-heart {
@@ -586,9 +659,21 @@ footer {
   margin-top: 40px;
   margin-left: 13px;
 }
+.form__title::after {
+  justify-self: flex-end;
+  overflow: visible;
+  display: block;
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #99e2d0;
+}
 .form__subtitle {
   margin-top: 12px;
   padding-right: 30px;
+}
+.form__price {
+  padding-left: 15px;
 }
 .form__description-box {
   display: flex;
@@ -597,6 +682,8 @@ footer {
   align-items: initial;
   gap: initial;
   margin-bottom: 14px;
+  font-size: 15px;
+  font-weight: 300;
 }
 .form label {
   display: flex;

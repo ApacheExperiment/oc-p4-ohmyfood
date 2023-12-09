@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1bb0677a28.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../sass/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <title>OhMyFood</title>
 </head>
 
@@ -26,9 +26,13 @@
                     alt="image de plat servi au restaurant à la française">
                 <div class="restaurant-page__headline">
                     <h2 class="restaurant-page__title">À la française</h2>
-                    <div class="restaurant-page__heart-icon-container">
-                        <i class="fas fa-heart restaurant-page__heart-icon"></i>
-                        <i class="far fa-heart restaurant-page__heart-icon"></i>
+                    <div class="icon-heart-box-restaurant">
+                        <input type="checkbox" id="heart-restaurant" class="hidden-heart-input">
+                        <label for="heart-restaurant" class="heart-label">
+                            <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="black" />
+                            </svg>
+                        </label>
                     </div>
                 </div>
                 <form class="restaurant-page__form form" method="get" action="#">
@@ -36,24 +40,24 @@
                     <label>
                     <span class="form__subtitle">Tartare de poulpe acidulé</span>
                         <span class="form__description-box">
-                            <span>Aux zestes d'orange</span>
-                            <span>25€</span>
+                            <span class="form__description">Aux zestes d'orange</span>
+                            <span class="form__price">25€</span>
                         </span>
                     </label>
 
                     <label>
                     <span class="form__subtitle">Velouté de légumes d'antan</span>
                         <span class="form__description-box">
-                            <span>Carotte, panais, topinambour</span>
-                            <span>35€</span>
+                            <span class="form__description">Carotte, panais, topinambour</span>
+                            <span class="form__price">35€</span>
                         </span>
                     </label>
 
                     <label>
                     <span class="form__subtitle">Soupe à l'oignon</span>
                         <span class="form__description-box">
-                            <span>Revisitée</span>
-                            <span>20€</span>
+                            <span class="form__description">Revisitée</span>
+                            <span class="form__price">20€</span>
                         </span>
                     </label>
 
@@ -61,24 +65,24 @@
                     <label>
                     <span class="form__subtitle">Coquilles Saint-Jacques</span>
                         <span class="form__description-box">
-                            <span>Accompagnées d'une purée de panais</span>
-                            <span>40€</span>
+                            <span class="form__description">Accompagnées d'une purée de panais</span>
+                            <span class="form__price">40€</span>
                         </span>
                     </label>
 
                     <label>
                     <span class="form__subtitle">Magret de canard</span>
                         <span class="form__description-box">
-                            <span>Et parmentier de pommes de terre</span>
-                            <span>35€</span>
+                            <span class="form__description">Et parmentier de pommes de terre</span>
+                            <span class="form__price">35€</span>
                         </span>
                     </label>
 
                     <label>
                     <span class="form__subtitle">Pigeonneau d’Ille-et-Vilaine</span>
                         <span class="form__description-box">
-                            <span>Sur son lit de gnocchis aux légumes</span>
-                            <span>44€</span>
+                            <span class="form__description">Sur son lit de gnocchis aux légumes</span>
+                            <span class="form__price">44€</span>
                         </span>
                     </label>
 
@@ -86,24 +90,24 @@
                     <label>
                     <span class="form__subtitle">Pétales de violettes glacés</span>
                         <span class="form__description-box">
-                            <span>Et purée de noisettes</span>
-                            <span>18€</span>
+                            <span class="form__description">Et purée de noisettes</span>
+                            <span class="form__price">18€</span>
                         </span>
                     </label>
 
                     <label>
                     <span class="form__subtitle">Fondant au chocolat</span>
                         <span class="form__description-box">
-                            <span>Revisité</span>
-                            <span>22€</span>
+                            <span class="form__description">Revisité</span>
+                            <span class="form__price">22€</span>
                         </span>
                     </label>
 
                     <label>
                     <span class="form__subtitle">Millefeuille croustillant</span>
                         <span class="form__description-box">
-                            <span>Myrtilles et pâte d’amande</span>
-                            <span>23€</span>
+                            <span class="form__description">Myrtilles et pâte d’amande</span>
+                            <span class="form__price">23€</span>
                         </span>
                     </label>
                     <button class="button-commander">Commander</button>
@@ -137,7 +141,7 @@
                 </li>
                 <li>
                     <address>
-                        <a class="footer__link" href="#">
+                        <a class="footer__link" href="mailto:apache_macadam@hotmail.com">
                             Contact
                         </a>
                     </address>

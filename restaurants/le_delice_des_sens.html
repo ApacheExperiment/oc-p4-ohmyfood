@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1bb0677a28.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../sass/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <title>OhMyFood</title>
 </head>
 
@@ -26,32 +26,37 @@
                     alt="image de plat servi au restaurant à la française">
                 <div class="restaurant-page__headline">
                     <h2 class="restaurant-page__title">Le délice des sens</h2>
-                    <div class="restaurant-page__heart-icon-container">
-                        <i class="fas fa-heart restaurant-page__heart-icon"></i>
-                        <i class="far fa-heart restaurant-page__heart-icon"></i>
+                    <div class="icon-heart-box-restaurant">
+                        <input type="checkbox" id="heart-restaurant" class="hidden-heart-input">
+                        <label for="heart-restaurant" class="heart-label">
+                            <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="black" />
+                            </svg>
+                        </label>
                     </div>
+                </div>
                 </div>
                 <form class="restaurant-page__form form" method="get" action="#">
                 <h2 class="form__title">Entrées</h2>
                 <label>
                 <span class="form__subtitle">Tartare de thon</span>
                     <span class="form__description-box">
-                        <span>Assaisonné au yuzu</span>
-                        <span>25€</span>
+                        <span class="form__description">Assaisonné au yuzu</span>
+                        <span class="form__price">25€</span>
                     </span>
                 </label>
                 <label>
                 <span class="form__subtitle">Bouchée de homard croustillant</span>
                     <span class="form__description-box">
-                        <span>Et sa farandole de petits légumes</span>
-                        <span>35€</span>
+                        <span class="form__description">Et sa farandole de petits légumes</span>
+                        <span class="form__price">35€</span>
                     </span>
                 </label>
                 <label>
                 <span class="form__subtitle">Velouté de cèpes</span>
                     <span class="form__description-box">
-                        <span>Aux truffes</span>
-                        <span>20€</span>
+                        <span class="form__description">Aux truffes</span>
+                        <span class="form__price">20€</span>
                     </span>
                 </label>
                 
@@ -59,22 +64,22 @@
                 <label>
                 <span class="form__subtitle">Poulet rôti aux herbes de Provence</span>
                     <span class="form__description-box">
-                        <span>Et sa crème de truffe</span>
-                        <span>40€</span>
+                        <span class="form__description">Et sa crème de truffe</span>
+                        <span class="form__price">40€</span>
                     </span>
                 </label>
                 <label>
                 <span class="form__subtitle">Langouste rôtie</span>
                     <span class="form__description-box">
-                        <span>Et ses légumes de saison</span>
-                        <span>35€</span>
+                        <span class="form__description">Et ses légumes de saison</span>
+                        <span class="form__price">35€</span>
                     </span>
                 </label>
                 <label>
                 <span class="form__subtitle">Côte de bœuf Angus</span>
                     <span class="form__description-box">
-                        <span>Et sa purée de panais</span>
-                        <span>44€</span>
+                        <span class="form__description">Et sa purée de panais</span>
+                        <span class="form__price">44€</span>
                     </span>
                 </label>
                 
@@ -83,21 +88,21 @@
                 <span class="form__subtitle">Farandole de desserts</span>
                     <span class="form__description-box">
                         <span>Du chef</span>
-                        <span>18€</span>
+                        <span class="form__price">18€</span>
                     </span>
                 </label>
                 <label>
                 <span class="form__subtitle">Crème brulée</span>
                     <span class="form__description-box">
-                        <span>Revisitée</span>
-                        <span>22€</span>
+                        <span class="form__description">Revisitée</span>
+                        <span class="form__price">22€</span>
                     </span>
                 </label>
                 <label>
                 <span class="form__subtitle">Tiramisu</span>
                     <span class="form__description-box">
-                        <span>À la noisette</span>
-                        <span>23€</span>
+                        <span class="form__description">À la noisette</span>
+                        <span class="form__price">23€</span>
                     </span>
                 </label>
                 <button class="button-commander">Commander</button>
@@ -131,7 +136,7 @@
                     </li>
                     <li>
                         <address>
-                            <a class="footer__link" href="#">
+                            <a class="footer__link" href="mailto:apache_macadam@hotmail.com">
                                 Contact
                             </a>
                         </address>

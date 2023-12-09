@@ -4,17 +4,24 @@
 $main-font: "Roboto", sans-serif;
 $title-font: "Shrikhand", cursive;
 /******Weights******/
-$bold:700;
-$semi-bold:500;
-$regular:400;
-$thin:300;
+$bold: 700;
+$semi-bold: 500;
+$regular: 400;
+$thin: 300;
 /******Sizes******/
-$header:30px;
-$regular-size:18px;
-$small-size:16px;
+$header: 30px;
+$regular-size: 18px;
+$small-size: 16px;
 /******Colors******/
-$local:#353535;
+$local: #353535;
 
+/******Buttons******/
+.button-explorer,
+.button-fonction,
+.button-commander {
+  font-size: $small-size;
+  font-weight: $semi-bold;
+}
 /******Main******/
 body {
   font-family: $main-font;
@@ -31,13 +38,13 @@ body {
   input[type="text"]::placeholder {
     font-size: $small-size;
     font-weight: $semi-bold;
-    font-family:$main-font;
-    color:$local;
+    font-family: $main-font;
+    color: $local;
   }
 }
 .reserver__content {
   font-size: $regular-size;
-  font-weight:$thin;
+  font-weight: $thin;
 }
 
 .card {
@@ -46,32 +53,46 @@ body {
   }
 
   &__title {
-    font-size: 18px;
+    font-size: $regular-size;
     font-weight: $bold;
   }
 
   &__subtitle {
-    font-size: 17px; 
+    font-size: 17px;
     font-weight: $thin;
   }
 }
 /******restaurant******/
 .restaurant-page {
   &__title {
-  font-family: $title-font;
-  font-size: 28px;
+    font-family: $title-font;
+    font-size: 28px;
+  }
+  .form {
+    &__title {
+      font-weight: $thin;
+      text-transform: uppercase;
+      line-height: 18.75px;
+      font-size: $small-size;
+    }
+    &__subtitle {
+      font-size: $regular-size;
+      font-weight: $semi-bold;
+    }
+    &__description {
+      font-size: 15px;
+      font-weight: $thin;
+    }
+    &__price {
+      font-size: $small-size;
+      font-weight: $bold;
+    }
   }
 }
 
+/******Footer******/
 .footer__title {
   font-family: $title-font;
-  font-size:$regular-size;
-  font-weight:$thin;
-}
-/******Buttons******/
-.button-explorer,
-.button-fonction,
-.button-commander {
-  font-size: $small-size;
-  font-weight: $semi-bold;
+  font-size: $regular-size;
+  font-weight: $thin;
 }

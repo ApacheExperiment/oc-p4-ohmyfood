@@ -8,14 +8,29 @@
         height: 27px;
         margin-top:40px;
         margin-left:13px;
+        
+        &::after {
+            justify-self: flex-end;
+            overflow: visible;
+            display:block;
+            content:"";
+            width:40px;
+            height:3px;
+            background-color:$tag-first-color;
+        }
     }
     &__subtitle {
         margin-top:12px;
         padding-right:30px;
     }
+    &__price {
+        padding-left:15px;
+    }
     &__description-box {
         @include flex ($justify: space-between);
         margin-bottom:14px;
+        font-size: 15px;
+        font-weight: $thin;
     }
     
     label {
