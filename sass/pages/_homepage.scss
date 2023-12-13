@@ -36,33 +36,62 @@
 }
 /******Fonction******/
 .fonction {
-    @include flex ($direction:column, $gap:26px);
+    @include flex ($direction:column,$gap:26px);
     padding:48px 20px 68px 20px;
     background-color:$main-bg;
     
-    &__buttons-container {
+    @media (min-width:1024px) {
+        @include flex ($direction:column, $justify:initial, $align:center, $gap:25px);
+    }
+    &__title {
+        @media (min-width: 1024px) {
+        width:100%;
+        max-width: calc(3 * 335px + 2 * 24px);
+        }
+    }
+    &__buttons-box {
         @include flex ($direction: column, $gap:25px);
+        @media (min-width:1024px) {
+            @include flex ($direction:row,$justify:center,$gap:24px);
+            width: calc(100%);
+        }
     }
 }
 /******Restaurant******/
 .restaurants {
-@include flex ($direction:column, $justify:center, $align:center, $gap:26px);
-background-color:$second-bg;
-padding: 54px 17.5px 66px 17.5px;
-
+    @include flex ($direction:column, $justify:center, $align:center, $gap:26px);
+    background-color:$second-bg;
+    padding: 54px 17.5px 66px 17.5px;
+    @media (min-width:1024px) {
+        padding-top:30px;
+        margin-top:-1px;
+    }
     &__title {
         padding-left: 3px;
         width:100%;
         max-width:1080px;
     }
     &__cards-container {
-        @include flex ($justify:center, $align:center, $gap:18px);
+        @include flex ($direction:row, $justify:center, $align:center, $gap:18px);
         flex-wrap:wrap;
         width: 100%;
         max-width: 1080px;
+        @media (min-width:768px){
+        gap:20px;
+        }
+        @media (min-width:1024px){
+        gap:50px;
+        }
     }
     &__card-link {
         width:100%;
         position:relative;
+        @media (min-width:768px) {
+        width: calc((100% - 20px) / 2)
+        }
+        @media (min-width:1024px) {
+        width: calc((100% - 50px) / 2);
+        max-width:490px;
+        }
     }
 }
