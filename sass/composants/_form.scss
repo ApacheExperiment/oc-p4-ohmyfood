@@ -1,48 +1,44 @@
 .form {
-    background-color:$restaurant-page-bg-color;
-    margin: 0 auto;
-    @include flex ($direction:column, $gap:12px);
+  background-color: $restaurant-page-bg-color;
+  margin: 0 auto;
+  @include flex($direction: column, $gap: 12px);
 
-    &__title {
-        @include flex($direction:column, $justify:space-between);
-        height: 27px;
-        margin-top:40px;
-        margin-left:13px;
-        
-        &::after {
-            justify-self: flex-end;
-            overflow: visible;
-            display:block;
-            content:"";
-            width:40px;
-            height:3px;
-            background-color:$tag-first-color;
-        }
+  &__title {
+    @include flex($direction: column, $justify: space-between);
+    height: 27px;
+    margin-top: 40px;
+    margin-left: 13px;
+
+    &::after {
+      justify-self: flex-end;
+      overflow: visible;
+      display: block;
+      content: "";
+      width: 40px;
+      height: 3px;
+      background-color: $tag-first-color;
     }
-    &__subtitle {
-        margin-top:12px;
-        padding-right:30px;
-    }
-    &__price {
-        padding-left:15px;
-    }
-    &__description-box {
-        @include flex ($justify: space-between);
-        margin-bottom:14px;
-        font-size: 15px;
-        font-weight: $thin;
-    }
-    
-    label {
-        @include flex ($direction:column, $justify:space-between);
-        height:70px;
-        padding:0 15px 0 15px;
-        margin:0 13px 0 13px;
-        border-radius: 15px;
-        background-color:$main-bg;
-        box-shadow: 0px 4px 15px rgba (0,0,0,0.15);
-    }
-    button {
-        margin:28px auto 40px auto;
-    }
+  }
+  label {
+    @include flex($direction: column, $justify: space-between);
+    height: 70px;
+    padding: 0 15px 0 15px;
+    margin: 0 13px 0 13px;
+    border-radius: 15px;
+    background-color: $main-bg;
+    box-shadow: 0px 4px 15px rgba (0, 0, 0, 0.15);
+  }
+  &__subtitle {
+    margin-top: 12px;
+    padding-right: 30px;
+  }
+  &__description-box {
+    @include flex($justify: space-between);
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: $thin;
+  }
+  &__price {
+    padding-left: 15px;
+  }
 }

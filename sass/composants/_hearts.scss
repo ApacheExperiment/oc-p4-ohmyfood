@@ -9,7 +9,7 @@
     }
 }*/
 /* Style du conteneur */
-.icon-heart-box {
+.heart-icon-box {
   position: absolute;
   right: 19px;
   bottom: 25px;
@@ -50,10 +50,12 @@
 /* Et ainsi de suite pour chaque coeur */
 
 } 
-.icon-heart-box-restaurant {
-  position: absolute;
-  right: 32px;
-  bottom: 2px;
+.heart-icon-box-restaurant {
+  position:relative;
+  height:28px;
+  width: 28px;
+  
+  bottom: 13px;
   text-align: center;
   display: inline-block;
   cursor: pointer;

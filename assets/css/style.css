@@ -99,6 +99,7 @@ body {
 .restaurant-page__title {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
+  font-weight: 300;
 }
 .restaurant-page .form__title {
   font-weight: 300;
@@ -301,8 +302,8 @@ footer {
 */
 .restaurant-loader {
   z-index: -1;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   opacity: 1;
   display: flex;
   flex-direction: column;
@@ -358,48 +359,48 @@ footer {
   opacity: 0;
 }
 .restaurant-loader .bubble:nth-child(1) {
-  margin-top: 30px;
+  margin-top: 2.5vh;
   left: 50%;
-  width: 30px;
-  height: 30px;
+  width: 2.5vh;
+  height: 2.5vh;
   background-color: #ddf5ef;
   animation: bubble 2s cubic-bezier(0.53, 0.16, 0.39, 0.96) infinite;
 }
 .restaurant-loader .bubble:nth-child(2) {
-  margin-top: 30px;
+  margin-top: 3vh;
   left: 50%;
-  width: 30px;
-  height: 30px;
+  width: 2vh;
+  height: 2vh;
   background-color: #d1f2ea;
   animation: bubble 2s ease-in-out 0.35s infinite;
 }
 .restaurant-loader .bubble:nth-child(3) {
-  margin-top: 20px;
+  margin-top: 1.8vh;
   left: 50%;
-  width: 15px;
-  height: 15px;
+  width: 1.5vh;
+  height: 1.5vh;
   background-color: #99e2d0;
   animation: bubble 1.5s cubic-bezier(0.53, 0.16, 0.39, 0.96) 0.55s infinite;
 }
 .restaurant-loader .bubble:nth-child(4) {
-  margin-top: 35px;
+  margin-top: 2.7vh;
   left: 50%;
-  width: 15px;
-  height: 15px;
+  width: 1.2vh;
+  height: 1.2vh;
   background-color: #65d3b8;
   animation: bubble 1.8s cubic-bezier(0.53, 0.16, 0.39, 0.96) 0.9s infinite;
 }
 .restaurant-loader .bubble:nth-child(5) {
-  margin-top: 35px;
+  margin-top: 2.7vh;
   left: 50%;
-  width: 15px;
-  height: 15px;
+  width: 1.1vh;
+  height: 1.1vh;
   background-color: #81dbc5;
   animation: bubble 1.6s ease-in-out 1s infinite;
 }
 .restaurant-loader .couvercle {
   position: fixed;
-  top: 52.3%;
+  top: 52.3vh;
   height: 12px;
   animation-duration: 2s;
   animation-fill-mode: both;
@@ -408,37 +409,37 @@ footer {
 }
 @media (min-width: 768px) {
   .restaurant-loader .couvercle {
-    top: 54.3%;
+    top: 54.3vh;
   }
 }
 @media (min-width: 1024px) {
   .restaurant-loader .couvercle {
-    top: 56.3%;
+    top: 56.3vh;
   }
 }
 @media (min-width: 1440px) {
   .restaurant-loader .couvercle {
-    top: 56.3%;
+    top: 56.3vh;
   }
 }
 .restaurant-loader .marmitte {
   position: fixed;
-  top: 54%;
+  top: 54vh;
   height: 25px;
 }
 @media (min-width: 768px) {
   .restaurant-loader .marmitte {
-    top: 56%;
+    top: 56vh;
   }
 }
 @media (min-width: 1024px) {
   .restaurant-loader .marmitte {
-    top: 58%;
+    top: 58vh;
   }
 }
 @media (min-width: 1440px) {
   .restaurant-loader .marmitte {
-    top: 58%;
+    top: 58vh;
   }
 }
 
@@ -713,7 +714,7 @@ footer {
   max-width: 1055px;
   position: relative;
   margin: -40px auto 0 auto;
-  padding: 32px 3.4% 0px 3.4%;
+  padding: 32px 3.4vw 0px 3.4vw;
   border-radius: 40px 40px 0 0;
   z-index: 1;
   background: #f1f1f1;
@@ -726,13 +727,9 @@ footer {
 }
 @media (min-width: 1024px) {
   .restaurant-page__headline {
-    padding-right: 365px;
+    padding-left: 365px;
     padding-right: 365px;
   }
-}
-.restaurant-page__heart-icon {
-  position: absolute;
-  line-height: 41px;
 }
 .restaurant-page__form {
   max-width: 1055px;
@@ -1004,7 +1001,7 @@ label:nth-of-type(1) {
     }
 }*/
 /* Style du conteneur */
-.icon-heart-box {
+.heart-icon-box {
   position: absolute;
   right: 19px;
   bottom: 25px;
@@ -1016,50 +1013,51 @@ label:nth-of-type(1) {
   /* Style au clic et état coché pour le deuxième coeur */
   /* Et ainsi de suite pour chaque coeur */
 }
-.icon-heart-box .heart-icon {
+.heart-icon-box .heart-icon {
   width: 28px;
   height: 28px;
   transition: transform 3s; /* Transition pour l'effet de changement de couleur */
   /* Couleur initiale du coeur */
 }
-.icon-heart-box .hidden-heart-input {
+.heart-icon-box .hidden-heart-input {
   visibility: hidden;
 }
-.icon-heart-box #heart1:checked + .heart-label .heart-icon {
+.heart-icon-box #heart1:checked + .heart-label .heart-icon {
   fill: color-mix(in srgb, rgb(147, 86, 220) 39%, #ff79da 95%); /* Couleur remplie au clic */
   stroke-width: 0; /* Épaisseur du contour à zéro */
 }
-.icon-heart-box #heart2:checked + .heart-label .heart-icon {
+.heart-icon-box #heart2:checked + .heart-label .heart-icon {
   fill: color-mix(in srgb, rgb(147, 86, 220) 39%, #ff79da 95%); /* Couleur remplie au clic */
   stroke-width: 0; /* Épaisseur du contour à zéro */
 }
-.icon-heart-box #heart3:checked + .heart-label .heart-icon {
+.heart-icon-box #heart3:checked + .heart-label .heart-icon {
   fill: color-mix(in srgb, rgb(147, 86, 220) 39%, #ff79da 95%); /* Couleur remplie au clic */
   stroke-width: 0; /* Épaisseur du contour à zéro */
 }
-.icon-heart-box #heart4:checked + .heart-label .heart-icon {
+.heart-icon-box #heart4:checked + .heart-label .heart-icon {
   fill: color-mix(in srgb, rgb(147, 86, 220) 39%, #ff79da 95%); /* Couleur remplie au clic */
   stroke-width: 0; /* Épaisseur du contour à zéro */
 }
 
-.icon-heart-box-restaurant {
-  position: absolute;
-  right: 32px;
-  bottom: 2px;
+.heart-icon-box-restaurant {
+  position: relative;
+  height: 28px;
+  width: 28px;
+  bottom: 13px;
   text-align: center;
   display: inline-block;
   cursor: pointer;
 }
-.icon-heart-box-restaurant .heart-icon {
+.heart-icon-box-restaurant .heart-icon {
   width: 28px;
   height: 28px;
   transition: transform 3s; /* Transition pour l'effet de changement de couleur */
   /* Couleur initiale du coeur */
 }
-.icon-heart-box-restaurant .hidden-heart-input {
+.heart-icon-box-restaurant .hidden-heart-input {
   visibility: hidden;
 }
-.icon-heart-box-restaurant #heart-restaurant:checked + .heart-label .heart-icon {
+.heart-icon-box-restaurant #heart-restaurant:checked + .heart-label .heart-icon {
   fill: color-mix(in srgb, rgb(147, 86, 220) 39%, #ff79da 95%);
   stroke-width: 0; /* Épaisseur du contour à zéro */
 }
@@ -1158,23 +1156,6 @@ label:nth-of-type(1) {
   height: 3px;
   background-color: #99e2d0;
 }
-.form__subtitle {
-  margin-top: 12px;
-  padding-right: 30px;
-}
-.form__price {
-  padding-left: 15px;
-}
-.form__description-box {
-  display: flex;
-  flex-direction: initial;
-  justify-content: space-between;
-  align-items: initial;
-  gap: initial;
-  margin-bottom: 14px;
-  font-size: 15px;
-  font-weight: 300;
-}
 .form label {
   display: flex;
   flex-direction: column;
@@ -1188,6 +1169,20 @@ label:nth-of-type(1) {
   background-color: #ffffff;
   box-shadow: 0px 4px 15px rgba 0, 0, 0, 0.15;
 }
-.form button {
-  margin: 28px auto 40px auto;
+.form__subtitle {
+  margin-top: 12px;
+  padding-right: 30px;
+}
+.form__description-box {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+  align-items: initial;
+  gap: initial;
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: 300;
+}
+.form__price {
+  padding-left: 15px;
 }/*# sourceMappingURL=style.css.map */
