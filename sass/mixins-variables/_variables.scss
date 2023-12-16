@@ -1,13 +1,13 @@
 /******Colors******/
-$main-bg:#ffffff;
+$main-bg: #ffffff;
 $location-bg: #eaeaea;
-$second-bg:#f3f3f3;
-$restaurant-page-bg-color:#f1f1f1;
-$num-fonction:#9356dc;
-$button-fonction:#ffffff;
-$local:#353535;
-$footer:#353535;
-$icon:#7a7a7a;
+$second-bg: #f3f3f3;
+$restaurant-page-bg-color: #f1f1f1;
+$num-fonction: #9356dc;
+$button-fonction: #ffffff;
+$local: #353535;
+$footer: #353535;
+$icon: #7a7a7a;
 
 /******Tag******/
 $tag-first-color: #99e2d0;
@@ -15,25 +15,24 @@ $tag-second-color: #008766;
 $tag-first-color--light: lighten($tag-first-color, 3%);
 
 /******Shadow Color******/
-$shadow-color:rgba(0, 0, 0, 0.25);
+$shadow-color: rgba(0, 0, 0, 0.25);
 
 /******Gradients******/
-$first-gradient:rgba (147,86,220);
-$second-gradient:#ff79da;
-$first-gradient-light:lighten rgba(147,86,220, 3%);
-$second-gradient-light:lighten (#ff79da,3%);
-$degrade:linear-gradient(-3.33deg, rgba(147, 86, 220) -11.44%, #ff79da 95.93%);
+$first-gradient: rgba (147, 86, 220);
+$second-gradient: #ff79da;
+$first-gradient-light: lighten rgba(147, 86, 220, 3%);
+$second-gradient-light: lighten (#ff79da, 3%);
+$degrade: linear-gradient(-3.33deg, rgba(147, 86, 220) -11.44%, #ff79da 95.93%);
 
 /*****Weight******/
-$bold:700;
-$semi-bold:500;
-$regular:400;
-$thin:300;
+$bold: 700;
+$semi-bold: 500;
+$regular: 400;
+$thin: 300;
 
-/*Fonts*/
+/******Fonts******/
 /******Main******/
 $main-font: "Roboto", sans-serif;
 
 /******Title******/
 $title-font: "Shrikhand", cursive;
-    
