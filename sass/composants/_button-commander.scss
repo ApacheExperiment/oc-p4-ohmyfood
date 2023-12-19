@@ -1,18 +1,19 @@
+/******Button-commander******/
 .button-commander {
-    @include flex ($direction:row, $justify:center, $align:center, $gap:0);
-    width:218px;
-    height:50px;
-    border-radius:25px;
-    color:$main-bg;
-    background: linear-gradient(-3deg, rgba(147, 86, 220) -11.44%, #ff79da 130%);
-    box-shadow: 0px 4px 10px $shadow-color;
-    position: relative;
-    cursor:pointer;
-    transition-property: transform;
-    transition-duration: 1000ms;
+  @include flex($direction: row, $justify: center, $align: center, $gap: 0);
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  color: $main-bg;
+  background: linear-gradient(-3deg, rgba(147, 86, 220) -11.44%, #ff79da 130%);
+  box-shadow: 0px 4px 10px $shadow-color;
+  position: relative;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 1000ms;
 
-    &:hover {
+  &:hover {
     transform: scale(1.01);
-    background: linear-gradient(-3.33deg, rgba(147, 86, 220) -11.44%, #ff79da 95.93%);
+    background: $degrade;
   }
 }

@@ -1,3 +1,5 @@
+/******Variables******/
+
 /******Colors******/
 $main-bg: #ffffff;
 $location-bg: #eaeaea;
@@ -18,10 +20,10 @@ $tag-first-color--light: lighten($tag-first-color, 3%);
 $shadow-color: rgba(0, 0, 0, 0.25);
 
 /******Gradients******/
-$first-gradient: rgba (147, 86, 220);
+$first-gradient: rgba(147, 86, 220);
 $second-gradient: #ff79da;
-$first-gradient-light: lighten rgba(147, 86, 220, 3%);
-$second-gradient-light: lighten (#ff79da, 3%);
+$first-gradient-light: lighten ($first-gradient, 3%);
+$second-gradient-light: lighten ($second-gradient, 3%);
 $degrade: linear-gradient(-3.33deg, rgba(147, 86, 220) -11.44%, #ff79da 95.93%);
 
 /*****Weight******/

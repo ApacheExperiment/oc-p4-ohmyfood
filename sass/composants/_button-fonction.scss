@@ -1,54 +1,53 @@
-/*Button Fonction*/
-
+/******Button Fonction******/
 .fonction {
   &__buttons-box {
     counter-reset: n°Button;
   }
 }
 .button-fonction {
-    @include flex ($align:center);
-    list-style-type: none;
-    counter-increment:nbButton;
+  @include flex($align: center);
+  list-style-type: none;
+  counter-increment: nbButton;
+  width: 100%;
+  @media (min-width: 1024px) {
     width: 100%;
-    @media (min-width:1024px) {
-      width:100%;
-      max-width:335px;
-    }
+    max-width: 335px;
+  }
 
-    &:before {
-        @include flex ($justify:center, $align:center);
-        list-style-type: none;
-        content: counter(nbButton);
-        z-index: +1;
-        background-color:$num-fonction;
-        color: $main-bg;
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-    }
-    &__icon {
-        color:$icon;
-    }
-    
-    &__link {
-        margin-left: -12px;
-        width: 100%;
-        border-radius: 20px;
-        padding-left: 24px;
-        @include flex ($align:center, $gap:23px);
-        background-color:$button-fonction;
-        height: 72.38px;
-        
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-        transition: box-shadow, border, background-color, 1s;
-        
-      &:hover,
-      &:focus {
+  &:before {
+    @include flex($justify: center, $align: center);
+    list-style-type: none;
+    content: counter(nbButton);
+    z-index: +1;
+    background-color: $num-fonction;
+    color: $main-bg;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  &__icon {
+    color: $icon;
+  }
+
+  &__link {
+    margin-left: -12px;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 24px;
+    @include flex($align: center, $gap: 23px);
+    background-color: $button-fonction;
+    height: 72.38px;
+
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    transition: box-shadow, border, background-color, 1s;
+
+    &:hover,
+    &:focus {
       background-color: lighten(#f7f7f7, 0.1%);
-      
+
       .button-fonction__icon {
-        color: rgba(147, 86, 220);
-      } 
+        color: $first-gradient;
+      }
     }
   }
 }

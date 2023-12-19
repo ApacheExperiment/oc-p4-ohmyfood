@@ -1,96 +1,4 @@
-/*.loader {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  background: white;
-
-  position: fixed;
-  animation: loading 3s;
-
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  @media (min-width: 768px) {
-    gap: 3rem;
-  }
-  @media (min-width: 1024px) {
-    gap: 4rem;
-  }
-
-  /*&__img {
-    animation: none;
-    width: 15rem;
-    @media (min-width: 768px) {
-      width: 22.5rem;
-    }
-    @media (min-width: 1024px) {
-      width: 30rem;
-    }
-  }
-  &__dot {
-    border-top: 5px double #ff79da;
-    border-bottom: 5px double rgb(154, 91, 231);
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    animation: spin 1.5s linear infinite;
-  }
-}
-
-.fa-seedling {
-  position:fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color:color-mix(in srgb, #008766 40%, #99e2d0 50%);
-  font-size:28px;
-  animation: none !important; 
-  transition: none !important; 
-  
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes loading {
-  0% {
-    z-index: 5;
-  }
-  70% {
-    opacity: 1;
-  }
-  71% {
-    transform: scale(1);
-  }
-  81% {
-    opacity: 0.019;
-  }
-  99% {
-    opacity: 0.001;
-    transform: scale(5);
-    z-index: 5;
-  }
-  100% {
-    transform: scale(5);
-    opacity: 0;
-    z-index: -1;
-  }
-}
-*/
-
+/******Loader******/
 .restaurant-loader {
   z-index: -1;
   width: 100vw;
@@ -101,7 +9,7 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background: white;
+  background: $main-bg;
 
   position: fixed;
   animation: loading 3s;
@@ -111,21 +19,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  /*@media (min-width: 768px) {
-    gap: 3rem;
-  }
-  @media (min-width: 1024px) {
-    gap: 4rem;
-  }*/
   &__img {
     animation: none;
     width: 15rem;
-    /*@media (min-width: 768px) {
-      width: 22.5rem;
-    }
-    @media (min-width: 1024px) {
-      width: 30rem;
-    }*/
   }
   &__circle {
     position: relative;
@@ -184,66 +80,43 @@
     background-color: darken(#99e2d0, 6%);
     animation: bubble 1.6s ease-in-out 1s infinite;
   }
-  /*.couvercle,
-  .marmite {
-    
-    transform: translate(-50%, -50%);
-  }*/
   &__couvercle {
     position: fixed;
-    top: 52vh;
+    top: 56vh;
     height: 12px;
     animation-duration: 2s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-name: restaurant-loader-couvercle;
-    /* @media (min-height: 622px) {
-      top: 55.8vh;
-    }
-    @media (min-width: 768px) {
-      top: 54.5vh;
+    @media (min-height: 622px) {
+      top: 52.8vh;
     }
     @media (min-height: 837px) {
-      top: 54.5vh;
+      top: 52.5vh;
     }
-    @media (min-width: 1024px) {
-      top: 56.4vh;
+    @media (min-height: 1037px) {
+      top: 51.7vh;
     }
-    /*media (min-width: 1440px) {
-      top: 56.4vh;
-    }*/
-    /*@media (min-height: 622px) {
-      top: 55.8vh;
+    @media (min-height: 1395px) {
+      top: 51.5vh;
     }
-    @media (min-height: 837px) {
-      top: 54.5vh;
-    }*/
   }
   &__marmite {
     position: fixed;
-    top: 54vh;
-    height: 25px; /*
+    top: 60vh;
+    height: 25px;
     @media (min-height: 622px) {
-      top: 58vh;
-    }/*
-    @media (min-width: 768px) {
-      top: 56vh;
+      top: 55vh;
     }
     @media (min-height: 837px) {
-      top: 56vh;
+      top: 54vh;
     }
-    @media (min-width: 1024px) {
-      top: 58vh;
+    @media (min-height: 1037px) {
+      top: 53vh;
     }
-    /*@media (min-width: 1440px) {
-      top: 58vh;
-    }*/
-    /*@media (min-height: 622px) {
-      top: 58vh;
+    @media (min-height: 1037px) {
+      top: 52.3vh;
     }
-    @media (min-height: 837px) {
-      top: 56vh;
-    }*/
   }
 }
 

@@ -1,97 +1,114 @@
- /******Localisation******/
- .localisation-container {
-    @include flex ($justify:center, $align:center, $gap:17px);
-    height: 50px;
-    margin: 0;
-    background-color: $location-bg;
-  
-    input[type=text] {
+/******Homepage******/
+
+/******Localisation******/
+.localisation-container {
+  @include flex($justify: center, $align: center, $gap: 17px);
+  height: 50px;
+  margin: 0;
+  background-color: $location-bg;
+
+  input[type="text"] {
     width: 109px;
     background-color: $location-bg;
     border: none;
-    
+
     &:focus::placeholder {
-    opacity: 0;
+      opacity: 0;
     }
-    }
+  }
 }
 /******Reserver******/
 .reserver {
-    @include flex ($direction:column, $justify:center, $align:center, $gap:0);
-    text-align:center;
-    padding:39px 0 59px 0;
-    background-color: $second-bg;
-    
-    &__title {
-        margin-bottom: 12px;
-        width: calc(100% - 100px);
-        min-width: 275px;
-    }
+  @include flex($direction: column, $justify: center, $align: center, $gap: 0);
+  text-align: center;
+  padding: 39px 0 59px 0;
+  background-color: $second-bg;
 
-    &__content {
-        margin-bottom:27px;
-        width: calc(100% - 60px);
-        min-width: 315px;
-    }
+  &__title {
+    margin-bottom: 12px;
+    width: calc(100% - 100px);
+    min-width: 275px;
+  }
+
+  &__content {
+    margin-bottom: 27px;
+    width: calc(100% - 60px);
+    min-width: 315px;
+  }
 }
 /******Fonction******/
 .fonction {
-    @include flex ($direction:column,$gap:26px);
-    padding:48px 20px 68px 20px;
-    background-color:$main-bg;
-    
-    @media (min-width:1024px) {
-        @include flex ($direction:column, $justify:initial, $align:center, $gap:25px);
+  @include flex($direction: column, $gap: 26px);
+  padding: 48px 20px 68px 20px;
+  background-color: $main-bg;
+
+  @media (min-width: 1024px) {
+    @include flex(
+      $direction: column,
+      $justify: initial,
+      $align: center,
+      $gap: 25px
+    );
+  }
+  &__title {
+    @media (min-width: 1024px) {
+      width: 100%;
+      max-width: calc(3 * 335px + 2 * 24px);
     }
-    &__title {
-        @media (min-width: 1024px) {
-        width:100%;
-        max-width: calc(3 * 335px + 2 * 24px);
-        }
+  }
+  &__buttons-box {
+    @include flex($direction: column, $gap: 25px);
+    @media (min-width: 1024px) {
+      @include flex($direction: row, $justify: center, $gap: 24px);
+      width: calc(100%);
     }
-    &__buttons-box {
-        @include flex ($direction: column, $gap:25px);
-        @media (min-width:1024px) {
-            @include flex ($direction:row,$justify:center,$gap:24px);
-            width: calc(100%);
-        }
-    }
+  }
 }
 /******Restaurant******/
 .restaurants {
-    @include flex ($direction:column, $justify:center, $align:center, $gap:26px);
-    background-color:$second-bg;
-    padding: 54px 17.5px 66px 17.5px;
-    @media (min-width:1024px) {
-        padding-top:30px;
-        margin-top:-1px;
+  @include flex(
+    $direction: column,
+    $justify: center,
+    $align: center,
+    $gap: 26px
+  );
+  background-color: $second-bg;
+  padding: 54px 17.5px 66px 17.5px;
+  @media (min-width: 1024px) {
+    padding-top: 30px;
+    margin-top: -1px;
+  }
+  &__title {
+    padding-left: 3px;
+    width: 100%;
+    max-width: 1080px;
+  }
+  &__cards-container {
+    @include flex(
+      $direction: row,
+      $justify: center,
+      $align: center,
+      $gap: 18px
+    );
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1080px;
+    @media (min-width: 768px) {
+      gap: 20px;
     }
-    &__title {
-        padding-left: 3px;
-        width:100%;
-        max-width:1080px;
+    @media (min-width: 1024px) {
+      gap: 50px;
     }
-    &__cards-container {
-        @include flex ($direction:row, $justify:center, $align:center, $gap:18px);
-        flex-wrap:wrap;
-        width: 100%;
-        max-width: 1080px;
-        @media (min-width:768px){
-        gap:20px;
-        }
-        @media (min-width:1024px){
-        gap:50px;
-        }
+  }
+  &__card-link {
+    width: 100%;
+    position: relative;
+    @media (min-width: 768px) {
+      width: calc((100% - 20px) / 2);
     }
-    &__card-link {
-        width:100%;
-        position:relative;
-        @media (min-width:768px) {
-        width: calc((100% - 20px) / 2)
-        }
-        @media (min-width:1024px) {
-        width: calc((100% - 50px) / 2);
-        max-width:490px;
-        }
+    @media (min-width: 1024px) {
+      width: calc((100% - 50px) / 2);
+      max-width: 490px;
     }
+  }
 }
