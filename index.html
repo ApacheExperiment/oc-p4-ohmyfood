@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/1bb0677a28.js"
@@ -16,17 +17,20 @@
   </head>
 
   <body>
+    <!--Loader-->
     <div class="restaurant-loader">
       <img
         class="restaurant-loader__img"
         src="assets/images/logo/ohmyfood@2x.svg"
       />
       <div class="restaurant-loader__circle"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
+      <div id="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
       <img
         class="restaurant-loader__couvercle"
         src="./sass/layout/couvercle.png"
@@ -64,6 +68,7 @@
         <p class="reserver__content">
           Découvrez des restaurants d'exception sélectionnés par nos soins
         </p>
+        <!--Button Explore-->
         <a class="button-explorer" href="#ancre-restaurants"
           >Explorer nos restaurants</a
         >
@@ -105,6 +110,7 @@
             class="restaurants__card-link"
           >
             <article class="card">
+              <!--New Restaurant-->
               <p class="tag-nouveau">Nouveau</p>
               <img
                 class="card__img"
@@ -115,6 +121,7 @@
                 <h3 class="card__title">La palette du gout</h3>
                 <p class="card__subtitle">Ménilmontant</p>
               </div>
+              <!--First heart-->
               <div class="heart-icon-box">
                 <input
                   type="checkbox"

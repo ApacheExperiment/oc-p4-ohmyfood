@@ -79,10 +79,16 @@ body {
     &__subtitle {
       font-size: $regular-size;
       font-weight: $semi-bold;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
     &__description {
       font-size: 15px;
       font-weight: $thin;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
     &__price {
       font-size: $small-size;
