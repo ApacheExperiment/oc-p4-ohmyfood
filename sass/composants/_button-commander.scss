@@ -1,4 +1,4 @@
-/******Button-commander******/
+/***Button-commander***/
 .button-commander {
   @include flex($direction: row, $justify: center, $align: center, $gap: 0);
   width: 218px;

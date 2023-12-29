@@ -1,8 +1,8 @@
 @charset "UTF-8";
-/******Mixins-Variables******/
-/****** Mixins******/
+/***Mixins-Variables***/
+/*** Mixins***/
 /****** Flexbox ******/
-/******Variables******/
+/***Variables***/
 /******Colors******/
 /******Tag******/
 /******Shadow Color******/
@@ -14,7 +14,7 @@
 /******General******/
 /******Google-fonts******/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
-/******General******/
+/***General***/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -51,7 +51,7 @@ ul {
   outline: none;
 }
 
-/******Typo******/
+/***Typo***/
 /*****Fonts******/
 /******Weights******/
 /******Sizes******/
@@ -147,7 +147,7 @@ body {
 }
 
 /******Layout******/
-/******Header******/
+/***Header***/
 .header {
   display: flex;
   flex-direction: initial;
@@ -197,7 +197,7 @@ body {
   }
 }
 
-/******Footer******/
+/***Footer***/
 footer {
   background-color: #353535;
 }
@@ -279,7 +279,7 @@ footer {
   width: 130px;
 }
 
-/******Loader******/
+/***Loader***/
 .restaurant-loader {
   z-index: -1;
   width: 100vw;
@@ -497,7 +497,7 @@ footer {
   }
 }
 /******Pages******/
-/******Homepage******/
+/***Homepage***/
 /******Localisation******/
 .localisation-container {
   display: flex;
@@ -643,7 +643,7 @@ footer {
   }
 }
 
-/******Restaurants******/
+/***Restaurants***/
 .restaurant-page {
   background-color: #ffffff;
 }
@@ -759,7 +759,7 @@ footer {
   }
 }
 /******Composants******/
-/******Button-explorer******/
+/***Button-explorer***/
 .button-explorer {
   display: flex;
   flex-direction: row;
@@ -782,7 +782,7 @@ footer {
   background: linear-gradient(-3.33deg, rgb(147, 86, 220) -11.44%, #ff79da 95.93%);
 }
 
-/******Button Fonction******/
+/***Button Fonction***/
 .fonction__buttons-box {
   counter-reset: n°Button;
 }
@@ -843,7 +843,7 @@ footer {
   color: rgb(147, 86, 220);
 }
 
-/******Button-commander******/
+/***Button-commander***/
 .button-commander {
   display: flex;
   flex-direction: row;
@@ -866,7 +866,7 @@ footer {
   background: linear-gradient(-3.33deg, rgb(147, 86, 220) -11.44%, #ff79da 95.93%);
 }
 
-/******Card******/
+/***Card***/
 .card {
   display: flex;
   flex-direction: column;
@@ -911,7 +911,7 @@ footer {
   transition: box-shadow, transform, 0.5s;
 }
 
-/******Heart******/
+/***Heart***/
 .heart-icon-box {
   position: absolute;
   right: 49px;
@@ -970,7 +970,7 @@ footer {
   background: linear-gradient(#9356dc, #ff79da);
 }
 
-/******Form******/
+/***Form***/
 .restaurant-page .form {
   background-color: #f1f1f1;
   margin: 0 auto;

@@ -1,4 +1,4 @@
-/******Card******/
+/***Card***/
 .card {
   @include flex($direction: column, $gap: 16px);
   width: 100%;
