@@ -912,35 +912,16 @@ footer {
 }
 
 /******Heart******/
-/* Style du conteneur */
 .heart-icon-box {
   position: absolute;
-  right: 25px;
-  bottom: 25px;
-}
-.heart-icon-box #toggleHeart1 {
-  display: none;
-}
-.heart-icon-box #toggleHeart2 {
-  display: none;
-}
-.heart-icon-box #toggleHeart3 {
-  display: none;
-}
-.heart-icon-box #toggleHeart4 {
-  display: none;
-}
-.heart-icon-box #toggleHeart-restaurant {
-  display: none;
-}
-.heart-icon-box .material-icons.material-icons-outlined.heart-border,
-.heart-icon-box .material-icons.material-icons-outlined.heart-filled {
-  cursor: pointer;
-  position: absolute;
+  right: 49px;
+  bottom: 58px;
 }
 .heart-icon-box .heart-border {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+  position: absolute;
 }
 .heart-icon-box .heart-filled {
   opacity: 0;
@@ -949,62 +930,44 @@ footer {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 0.3s ease-in-out;
-}
-.heart-icon-box #toggleHeart1:checked + label .material-icons-outlined {
-  opacity: 0;
-}
-.heart-icon-box #toggleHeart1:checked + label .material-icons-filled {
-  opacity: 1;
-}
-.heart-icon-box #toggleHeart2:checked + label .material-icons-outlined {
-  opacity: 0;
-}
-.heart-icon-box #toggleHeart2:checked + label .material-icons-filled {
-  opacity: 1;
-}
-.heart-icon-box #toggleHeart3:checked + label .material-icons-outlined {
-  opacity: 0;
-}
-.heart-icon-box #toggleHeart3:checked + label .material-icons-filled {
-  opacity: 1;
-}
-.heart-icon-box #toggleHeart4:checked + label .material-icons-outlined {
-  opacity: 0;
-}
-.heart-icon-box #toggleHeart4:checked + label .material-icons-filled {
-  opacity: 1;
-}
-
-.restaurant-page__heart-icon-box {
-  position: relative;
-  right: 6px;
-  bottom: -9px;
-}
-.restaurant-page__heart-icon-box #toggleHeart-restaurant {
-  display: none;
-}
-.restaurant-page__heart-icon-box .material-icons.material-icons-outlined.heart-border,
-.restaurant-page__heart-icon-box .material-icons.material-icons-outlined.heart-filled {
   cursor: pointer;
   position: absolute;
 }
-.restaurant-page__heart-icon-box .heart-border {
+.heart-icon-box .heart-filled:hover, .heart-icon-box .heart-filled:focus, .heart-icon-box .heart-filled:active {
+  opacity: 1;
+  cursor: pointer;
+}
+.heart-icon-box .heart-filled:hover + .heart-border, .heart-icon-box .heart-filled:focus + .heart-border, .heart-icon-box .heart-filled:active + .heart-border {
+  background: linear-gradient(#9356dc, #ff79da);
+}
+
+.heart-icon-box-restaurants {
+  position: relative;
+  right: 27px;
+  bottom: -9px;
+}
+.heart-icon-box-restaurants .heart-border {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+  position: absolute;
 }
-.restaurant-page__heart-icon-box .heart-filled {
+.heart-icon-box-restaurants .heart-filled {
   opacity: 0;
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+  position: absolute;
 }
-.restaurant-page__heart-icon-box #toggleHeart-restaurant:checked + label .material-icons-outlined {
-  opacity: 0;
-}
-.restaurant-page__heart-icon-box #toggleHeart-restaurant:checked + label .material-icons-filled {
+.heart-icon-box-restaurants .heart-filled:hover, .heart-icon-box-restaurants .heart-filled:focus, .heart-icon-box-restaurants .heart-filled:active {
   opacity: 1;
+  cursor: pointer;
+}
+.heart-icon-box-restaurants .heart-filled:hover + .heart-border, .heart-icon-box-restaurants .heart-filled:focus + .heart-border, .heart-icon-box-restaurants .heart-filled:active + .heart-border {
+  background: linear-gradient(#9356dc, #ff79da);
 }
 
 /******Form******/
@@ -1021,7 +984,7 @@ footer {
   display: none;
 }
 .restaurant-page .form input[type=radio]:checked + label::before {
-  transform: rotate 0deg;
+  transform: rotate(0deg);
   margin-right: 0;
 }
 .restaurant-page .form input[type=radio]:checked + label::after {
@@ -1046,7 +1009,7 @@ footer {
   border-radius: 15px;
   overflow: hidden;
   background-color: #ffffff;
-  box-shadow: 0px 4px 15px rgba 0, 0, 0, 0.1;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 1024px) {
   .restaurant-page .form label {
@@ -1054,7 +1017,7 @@ footer {
   }
 }
 .restaurant-page .form label:hover, .restaurant-page .form label:focus {
-  box-shadow: 0px 4px 17px rgba 0, 0, 0, 0.15;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.15);
 }
 .restaurant-page .form label::before {
   content: "\f058";
@@ -1069,7 +1032,7 @@ footer {
   line-height: 69px;
   text-align: center;
   margin-right: -59px;
-  transform: rotate 180deg;
+  transform: rotate(180deg);
   z-index: 1;
   transition: all 0.5s ease-in-out;
 }

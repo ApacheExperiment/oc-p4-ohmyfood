@@ -1,37 +1,15 @@
 /******Heart******/
 
-/* Style du conteneur */
 .heart-icon-box {
   position: absolute;
-  right: 25px;
-  bottom: 25px;
-
-  #toggleHeart1 {
-    display: none;
-  }
-  #toggleHeart2 {
-    display: none;
-  }
-  #toggleHeart3 {
-    display: none;
-  }
-  #toggleHeart4 {
-    display: none;
-  }
-  #toggleHeart-restaurant {
-    display: none;
-  }
-  .material-icons.material-icons-outlined.heart-border,
-  .material-icons.material-icons-outlined.heart-filled {
-    cursor: pointer;
-    position: absolute;
-  }
-
+  right: 49px;
+  bottom: 58px;
   .heart-border {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
   }
-
   .heart-filled {
     opacity: 0;
     background: linear-gradient(#9356dc, #ff79da);
@@ -39,56 +17,32 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: opacity 0.3s ease-in-out;
-  }
+    cursor: pointer;
+    position: absolute;
 
-  #toggleHeart1:checked + label .material-icons-outlined {
-    opacity: 0;
-  }
-
-  #toggleHeart1:checked + label .material-icons-filled {
-    opacity: 1;
-  }
-  #toggleHeart2:checked + label .material-icons-outlined {
-    opacity: 0;
-  }
-
-  #toggleHeart2:checked + label .material-icons-filled {
-    opacity: 1;
-  }
-  #toggleHeart3:checked + label .material-icons-outlined {
-    opacity: 0;
-  }
-
-  #toggleHeart3:checked + label .material-icons-filled {
-    opacity: 1;
-  }
-  #toggleHeart4:checked + label .material-icons-outlined {
-    opacity: 0;
-  }
-
-  #toggleHeart4:checked + label .material-icons-filled {
-    opacity: 1;
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+      cursor: pointer;
+    }
+    &:hover + .heart-border,
+    &:focus + .heart-border,
+    &:active + .heart-border {
+      background: linear-gradient(#9356dc, #ff79da);
+    }
   }
 }
-.restaurant-page__heart-icon-box {
+.heart-icon-box-restaurants {
   position: relative;
-  right: 6px;
+  right: 27px;
   bottom: -9px;
-
-  #toggleHeart-restaurant {
-    display: none;
-  }
-  .material-icons.material-icons-outlined.heart-border,
-  .material-icons.material-icons-outlined.heart-filled {
-    cursor: pointer;
-    position: absolute;
-  }
-
   .heart-border {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
   }
-
   .heart-filled {
     opacity: 0;
     background: linear-gradient(#9356dc, #ff79da);
@@ -96,12 +50,19 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: opacity 0.3s ease-in-out;
-  }
-  #toggleHeart-restaurant:checked + label .material-icons-outlined {
-    opacity: 0;
-  }
+    cursor: pointer;
+    position: absolute;
 
-  #toggleHeart-restaurant:checked + label .material-icons-filled {
-    opacity: 1;
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+      cursor: pointer;
+    }
+    &:hover + .heart-border,
+    &:focus + .heart-border,
+    &:active + .heart-border {
+      background: linear-gradient(#9356dc, #ff79da);
+    }
   }
 }
